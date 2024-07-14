@@ -5,6 +5,9 @@ from functools import reduce
 from money import Money
 
 class Portfolio:
+    """
+    This is just a comment.
+    """
     def __init__(self):
         self.moneys = []
         self._euro_to_usd = 1.2
