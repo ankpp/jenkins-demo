@@ -8,4 +8,11 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            steps {
+                sh  './gchat_notifications.py'
+            }
+        }
+    }
 }

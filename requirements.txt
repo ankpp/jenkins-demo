@@ -1,2 +1,3 @@
-functools
 flake8
+json
+httplib2
