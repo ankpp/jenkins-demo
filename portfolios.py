@@ -1,14 +1,14 @@
-import operator
-
-from functools import reduce
-
 from money import Money
 
+
 class Portfolio:
+    """
+    This is just a comment.
+    """
     def __init__(self):
         self.moneys = []
         self._euro_to_usd = 1.2
-    
+
     def __convert(self, a_money, a_currency):
         exchange_rates = {"EUR->USD": 1.2, "USD->KRW": 1100}
         if a_money.currency == a_currency:
@@ -29,6 +29,6 @@ class Portfolio:
                 failures.append(ex)
         if not failures:
             return Money(total, currency)
-        
+
         failure_message = ",".join(f.args[0] for f in failures)
-        raise Exception("Missing exchange rate(s):[" + failure_message + "]")
+        raise Exception("No exchange rate(s):[" + failure_message + "]")
