@@ -10,9 +10,13 @@ pipeline {
     }
     post {
         always {
-            steps {
-                sh  './gchat_notifications.py'
-            }
+            sh 'python3 gchat_notifications.py Build has changed status:'
+        }
+        success {
+            sh 'python3 gchat_notifications.py Build has successfully completed. Status PASSED!'
+        }
+        failure {
+            sh 'python3 gchat_notifications.py Build ran with some errors. Status FAILED!'
         }
     }
 }

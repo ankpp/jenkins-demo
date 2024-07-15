@@ -1,11 +1,13 @@
+import sys
+
 from json import dumps
 from httplib2 import Http
 
 
-def main():
+def main(status_message):
     """Google Chat incoming webhook quickstart."""
     url = "https://chat.googleapis.com/v1/spaces/AAAAzxPyOJ4/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=VN-HvyYZRrnSK8Qh9k5gYEcbBnhuQUOtiaYbvV4hGRQ"  # noqa: E501
-    app_message = {"text": "Hello from a Python script!"}
+    app_message = {"text": status_message}
     message_headers = {"Content-Type": "application/json; charset=UTF-8"}
     http_obj = Http()
     response = http_obj.request(
@@ -18,4 +20,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    status_message = sys.argv[1] if len(sys.argv) > 1 else "No status received"
+    main(status_message)
