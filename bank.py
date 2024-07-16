@@ -16,3 +16,4 @@ class Bank:
         if key in self.exchange_rates:
             return Money(a_money.amount * self.exchange_rates[key], a_currency)
         raise Exception(key)
+    
