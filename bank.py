@@ -2,6 +2,9 @@ from money import Money
 
 
 class Bank:
+    """
+    Docstring goes here.
+    """
     def __init__(self):
         self.exchange_rates = {}
 
