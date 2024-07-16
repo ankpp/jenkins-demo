@@ -15,7 +15,7 @@ pipeline {
         }
         stage("Lint&Test") {
             steps {
-                sh "python3 -m flake8"
+                sh "python3 -m flake8 ./*.py"
                 sh "python3 -m pytest"
             }
         }
