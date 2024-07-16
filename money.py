@@ -20,4 +20,5 @@ class Money():
         return self.amount == other.amount and self.currency == other.currency
 
     def __str__(self):
+        """Another method override."""
         return f"{self.currency} {self.amount:0.2f}"
