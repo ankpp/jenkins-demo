@@ -8,6 +8,7 @@ class Money():
         self.currency = currency
 
     def times(self, multiplier):
+        """This is a method."""
         return Money(self.amount * multiplier, self.currency)
 
     def divide(self, divisor):
