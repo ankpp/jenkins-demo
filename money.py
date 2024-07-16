@@ -12,6 +12,7 @@ class Money():
         return Money(self.amount * multiplier, self.currency)
 
     def divide(self, divisor):
+        """This is another method."""
         return Money(self.amount / divisor, self.currency)
 
     def __eq__(self, other):
