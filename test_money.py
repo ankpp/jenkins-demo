@@ -6,6 +6,9 @@ from portfolios import Portfolio
 
 
 class TestMoney(unittest.TestCase):
+    """
+    Just a few tests.
+    """
 
     def setUp(self):
         self.bank = Bank()
