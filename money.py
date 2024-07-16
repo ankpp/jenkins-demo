@@ -16,6 +16,7 @@ class Money():
         return Money(self.amount / divisor, self.currency)
 
     def __eq__(self, other):
+        """Overriding a method."""
         return self.amount == other.amount and self.currency == other.currency
 
     def __str__(self):
