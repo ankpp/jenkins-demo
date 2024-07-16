@@ -3,7 +3,7 @@ from money import Money
 
 class Portfolio:
     """
-    This is just a comment.
+    This is just my Portfolio class.
     """
     def __init__(self):
         self.moneys = []
