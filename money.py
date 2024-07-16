@@ -3,6 +3,7 @@ class Money():
     Docstring goes here.
     """
     def __init__(self, amount, currency):
+        """This is the class initializer."""
         self.amount = amount
         self.currency = currency
 
