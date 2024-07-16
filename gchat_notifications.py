@@ -16,7 +16,7 @@ def main(status_message):
         headers=message_headers,
         body=dumps(app_message),
     )
-    # print(response)
+    print(response)
 
 
 if __name__ == "__main__":
