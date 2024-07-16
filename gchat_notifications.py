@@ -1,3 +1,7 @@
+# This is a Python implementation for sending Google Chat notifications
+# It works only on my own GChat channel
+# To make it work globally the URL must be passed (It is the webhook to the target channel)
+
 import sys
 
 from json import dumps

@@ -2,6 +2,9 @@ from money import Money
 
 
 class Bank:
+    """
+    This is my Bank class.
+    """
     def __init__(self):
         self.exchange_rates = {}
 
