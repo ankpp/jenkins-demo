@@ -27,7 +27,7 @@ pipeline {
             sh 'python3 gchat_notifications.py "Build has successfully completed. Status PASSED!"'
         }
         failure {
-            sh 'python3 gchat_notifications.py Build ran with some errors. Status FAILED!'
+            sh 'python3 gchat_notifications.py "Build ran with some errors. Status FAILED!"'
         }
     }
 }
