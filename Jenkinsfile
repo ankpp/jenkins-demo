@@ -15,7 +15,7 @@ pipeline {
         }
         stage("Lint&Test") {
             steps {
-                sh "/Users/alejandropasalagua/Library/Python/3.9/lib/python/site-packages/flake8"
+                sh "flake8"
                 sh "python3 -m pytest"
             }
         }
