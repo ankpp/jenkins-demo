@@ -13,9 +13,10 @@ pipeline {
                 sh "pip3 install -r requirements.txt"
             }
         }
-        stage("Test") {
+        stage("Lint&Test") {
             steps {
-                sh "coverage run -m pytest"
+                sh "flake8"
+                sh "python3 -m pytest"
             }
         }
     }
