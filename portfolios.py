@@ -6,6 +6,7 @@ class Portfolio:
     This is just a comment.
     """
     def __init__(self):
+        """This is the class initializer."""
         self.moneys = []
         self._euro_to_usd = 1.2
 
