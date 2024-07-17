@@ -11,6 +11,7 @@ class Portfolio:
         self._euro_to_usd = 1.2
 
     def __convert(self, a_money, a_currency):
+        """This is a special method."""
         exchange_rates = {"EUR->USD": 1.2, "USD->KRW": 1100}
         if a_money.currency == a_currency:
             return a_money.amount
