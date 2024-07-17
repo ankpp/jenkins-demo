@@ -6,6 +6,7 @@ class Bank:
     Docstring goes here.
     """
     def __init__(self):
+        """This is a clas initializer."""
         self.exchange_rates = {}
 
     def add_exchange_rate(self, currency_from, currency_to, rate):
