@@ -3,7 +3,7 @@ from money import Money
 
 class Portfolio:
     """
-    This is just a comment.
+    Docstring goes here.
     """
     def __init__(self):
         """This is the class initializer."""
