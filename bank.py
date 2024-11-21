@@ -2,9 +2,6 @@ from money import Money
 
 
 class Bank:
-    """
-    Docstring goes here.
-    """
     def __init__(self):
         """This is a clas initializer."""
         self.exchange_rates = {}
